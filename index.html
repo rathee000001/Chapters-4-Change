@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Chapters 4 Change | The Book Fairies</title>
+  <meta name="description" content="Chapters 4 Change — a university project with The Book Fairies to empower readers and expand access to books across New York.">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+  <style>
+    .dual-logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .dual-logos img {
+      width: 160px;
+      max-width: 45%;
+      height: auto;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,.25));
+      transition: transform 0.3s ease;
+    }
+    .dual-logos img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body class="page page-title" data-page="title" data-theme="light">
+
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Skip to content</a>
+  <canvas id="bgParticles" aria-hidden="true"></canvas>
+
+  <!-- ========================= UNIVERSAL NAVBAR ========================= -->
+  <nav class="navbar" aria-label="Primary">
+    <div class="nav-left">
+      <a href="index.html">
+        <img class="nav-logo" src="images/BookFairies_Logo.png" alt="The Book Fairies logo">
+      </a>
+      <span class="brand-title">Chapters 4 Change</span>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Index</a>
+      <a href="mission.html">Mission</a>
+      <a href="story.html">Story</a>
+      <a href="pastfundraiserexperience.html">Past Fundraising Examples</a>
+      <a href="segmentation.html">Segmentation</a>
+      <a href="target.html">Target Market</a>
+      <a href="positioning.html">Positioning</a>
+      <a href="usp.html">USP</a>
+      <a href="fundraiser.html">New Fundraiser</a>
+      <a href="marketing.html">Marketing</a>
+      <a href="appeal.html">Appeal</a>
+      <a href="integration.html">Integration</a>
+      <a href="cta.html">Call to Action</a>
+      <a href="thanku.html">Thank You</a>
+    </div>
+  </nav>
+
+  <!-- Progress Bar -->
+  <div id="progressBar" aria-hidden="true"></div>
+
+  <!-- ========================= HERO SECTION ========================= -->
+  <main id="main" class="main" tabindex="-1" aria-label="Title slide">
+    <section
+      id="title"
+      class="section hero-section fade-in"
+      data-hero="true"
+      data-parallax="0.25"
+      aria-label="Chapters 4 Change hero"
+      style="background-image: url('images/Hero.jpg'); background-position: center; background-size: cover; background-attachment: fixed;"
+    >
+      <div
+        class="hero-overlay gradient-dark hero-content glass-light animated-fade"
+        data-animate="in"
+        data-delay="120"
+        role="region"
+        aria-labelledby="title-heading"
+      >
+        <!-- ✅ Dual Logos (Book Fairies + NYIT) -->
+        <div class="dual-logos">
+          <img src="images/BookFairies_Logo.png" alt="The Book Fairies Logo">
+          <img src="images/Nyit.png" alt="NYIT Logo">
+        </div>
+
+        <h1 id="title-heading" class="hero-title gradient-text animated-slide">
+          Chapters 4 Change
+        </h1>
+
+        <p class="hero-subtitle typewriter" data-text="Empowering Readers through The Book Fairies">
+          Empowering Readers through The Book Fairies
+        </p>
+
+        <div class="presentation-meta" aria-label="Course and Team">
+          <p><strong>Course Title:</strong> W01 — Strategic Marketing &amp; Branding</p>
+          <p><strong>Term:</strong> Fall 2025</p>
+          <p><strong>Instructor:</strong> Jake Treister</p>
+          <p><strong>Submitted by Group Members:</strong></p>
+          <ul class="group-members">
+            <li>Praveen Rathee</li>
+            <li>Marygrace Kenny</li>
+            <li>Bhumika Dogra</li>
+          </ul>
+        </div>
+
+        <p class="citation">(The Book Fairies, 2025)</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating Nav -->
+  <a href="mission.html" class="floating-next">Mission</a>
+
+  <!-- ========================= UNIVERSAL FOOTER ========================= -->
+  <footer class="universal-footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <img src="images/BookFairies_Logo.png" alt="The Book Fairies Logo" class="footer-logo" />
+        <div class="footer-text">
+          <p><strong>The Book Fairies</strong></p>
+          <p>70 N Main St, Freeport, NY 11520</p>
+          <p><a href="mailto:info@thebookfairies.org">info@thebookfairies.org</a></p>
+          <p><a href="https://thebookfairies.org" target="_blank">www.thebookfairies.org</a></p>
+        </div>
+      </div>
+
+      <div class="footer-center">
+        <p>© 2025 The Book Fairies • NYIT School of Management • Chapters 4 Change</p>
+        <div class="footer-links">
+          <a href="https://thebookfairies.org" target="_blank">Official Website</a> • 
+          <a href="https://www.nyit.edu" target="_blank">NYIT</a> • 
+          <a href="mailto:info@thebookfairies.org">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="partners-title">University Partners</p>
+        <div class="partners-logos">
+          <img src="images/Nyit.png" alt="NYIT Logo" class="partner-logo" />
+          <img src="images/Stony Brooks.png" alt="Stony Brook University Logo" class="partner-logo" />
+          <img src="images/stjohn.png" alt="St. John's University Logo" class="partner-logo" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

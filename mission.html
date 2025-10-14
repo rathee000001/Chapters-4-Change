@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    ==========================================================
+    Chapters 4 Change — Mission Slide
+    Universal theme + app: glass navbar, progress bar, particles,
+    parallax hero, fade-ins, keyboard nav, soft page transitions.
+    ==========================================================
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mission | Chapters 4 Change — The Book Fairies</title>
+
+  <!-- Favicons (optional) -->
+  <link rel="icon" href="images/BookFairies_Logo.png" />
+
+  <!-- Universal Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Skip to content for a11y -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Background particles canvas (JS paints dots) -->
+  <canvas id="bgParticles" aria-hidden="true"></canvas>
+
+  <!-- Sticky Progress Bar -->
+  <div id="progressBar" role="presentation" aria-hidden="true"></div>
+<!-- ========================= UNIVERSAL NAVBAR ========================= -->
+<nav class="navbar" aria-label="Primary">
+  <div class="nav-left">
+    <a href="index.html">
+      <img class="nav-logo" src="images/BookFairies_Logo.png" alt="The Book Fairies logo">
+    </a>
+    <span class="brand-title">Chapters 4 Change</span>
+  </div>
+
+  <div class="nav-links">
+    <a href="index.html">Index</a>
+    <a href="mission.html">Mission</a>
+    <a href="story.html">Story</a>
+    <a href="pastfundraiserexperience.html">Past Fundraising Examples</a>
+    <a href="segmentation.html">Segmentation</a>
+    <a href="target.html">Target Market</a>
+    <a href="positioning.html">Positioning</a>
+    <a href="usp.html">USP</a>
+    <a href="fundraiser.html">New Fundraiser</a>
+    <a href="marketing.html">Marketing</a>
+    <a href="appeal.html">Appeal</a>
+    <a href="integration.html">Integration</a>
+    <a href="cta.html">Call to Action</a>
+    <a href="thanku.html">Thank You</a>
+  </div>
+</nav>
+
+
+
+
+  <!-- ========= MAIN / HERO SECTION ========= -->
+  <main id="main">
+    <!--
+      Hero uses your image:
+        images/Children Reading Together.jpg
+      If you renamed it, update the URL below.
+    -->
+    <section
+      id="mission"
+      class="section hero-section fade-in"
+      style="background-image: url('images/Children%20Reading%20Together.jpg');"
+      data-parallax="0.25"
+      aria-label="Mission: The Book Fairies">
+
+      <div class="hero-overlay animated-fade" style="animation-delay:.08s">
+        <!-- Optional tags row -->
+        <div class="subnav" aria-hidden="true">
+          <span class="tag">Purpose</span>
+          <span class="tag">Equity</span>
+          <span class="tag">Impact</span>
+        </div>
+
+        <!-- Slide Title -->
+        <img src="images/BookFairies_Logo.png" class="hero-logo animated-logo" alt="" aria-hidden="true">
+        <h1 class="hero-title gradient-text">Mission</h1>
+
+        <!-- 20-word text (hard cap) -->
+        <p class="hero-subtitle typewriter" data-text="Our mission: Foster literacy by redistributing books to communities that need them most."></p>
+
+        <!-- Brief context card (kept minimal/neutral, under the visual) -->
+        <div class="card fade-in" style="margin-top:1.25rem">
+          <div class="block-quote">
+            <p>
+              “Access to books creates opportunity. We remove barriers by placing free books directly where readers need them.”
+            </p>
+            <cite>
+              <a href="https://thebookfairies.org" target="_blank" rel="noopener">The Book Fairies, 2025</a>
+            </cite>
+          </div>
+        </div>
+
+        <!-- Citation (bottom-right of hero overlay) -->
+        <p class="citation fade-in" style="text-align:right">
+          (<a href="https://thebookfairies.org" target="_blank" rel="noopener"><em>The Book Fairies, 2025</em></a>)
+        </p>
+      </div>
+    </section>
+
+    <!-- ========= OPTIONAL SUPPORTING SECTION (kept concise) ========= -->
+    <section class="section fade-in" aria-label="Mission Highlights">
+      <div class="card">
+        <h2>How the Mission Shows Up</h2>
+        <p>
+          Book drives, warehouse sorting, school partnerships, shelters, and pop-up distributions convert donations into direct ownership for readers.
+        </p>
+        <div class="subnav" aria-hidden="true" style="margin-top:.5rem">
+          <span class="tag">Drives</span>
+          <span class="tag">Sorting</span>
+          <span class="tag">Distribution</span>
+          <span class="tag">Partnerships</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========= Floating FABs (prev/next) ========= -->
+  <a class="floating-prev" href="index.html" aria-label="Previous: Index">Index</a>
+  <a class="floating-next" href="story.html" aria-label="Next: Story">Story</a>
+
+<!-- ========================= UNIVERSAL FOOTER ========================= -->
+<footer class="universal-footer">
+  <div class="footer-content">
+    
+    <!-- LEFT SIDE: BOOK FAIRIES INFO -->
+    <div class="footer-left">
+      <img src="images/BookFairies_Logo.png" alt="The Book Fairies Logo" class="footer-logo" />
+      <div class="footer-text">
+        <p><strong>The Book Fairies</strong></p>
+        <p>70 N Main St, Freeport, NY 11520</p>
+        <p><a href="mailto:info@thebookfairies.org">info@thebookfairies.org</a></p>
+        <p><a href="https://thebookfairies.org" target="_blank">www.thebookfairies.org</a></p>
+      </div>
+    </div>
+
+    <!-- CENTER SECTION -->
+    <div class="footer-center">
+      <p>© 2025 The Book Fairies • NYIT School of Management • Chapters 4 Change</p>
+      <div class="footer-links">
+        <a href="https://thebookfairies.org" target="_blank">Official Website</a> • 
+        <a href="https://www.nyit.edu" target="_blank">NYIT</a> • 
+        <a href="mailto:info@thebookfairies.org">Contact</a>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE: UNIVERSITY PARTNERS -->
+    <div class="footer-right">
+      <p class="partners-title">University Partners</p>
+      <div class="partners-logos">
+        <img src="images/Nyit.png" alt="NYIT Logo" class="partner-logo" />
+        <img src="images/Stony Brooks.png" alt="Stony Brook University Logo" class="partner-logo" />
+        <img src="images/stjohn.png" alt="St. John's University Logo" class="partner-logo" />
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Universal App -->
+  <script defer src="app.js"></script>
+</body>
+</html>
