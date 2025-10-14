@@ -59,21 +59,30 @@
 <!-- Timeline Section -->
 
 <!-- Milestone Background Timeline -->
-<div class="milestone-overlay" 
-     style="background-image: url('images/milestone.JPG');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            padding: 80px 0;
-            position: relative;">
-  
-  <!-- Optional dark overlay for readability -->
-  <div style="position: absolute; 
-              top: 0; left: 0; right: 0; bottom: 0; 
-              background: rgba(255, 255, 255, 0.75);
-              z-index: 1;"></div>
+<div class="milestone-overlay"
+     style="
+       background-image: url('images/milestone.JPG');
+       background-size: cover;
+       background-position: center center;
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       position: relative;
+       padding: 100px 0;
+       overflow: hidden;
+     ">
 
+  <!-- Soft translucent overlay for readability -->
+  <div style="
+        position: absolute;
+        inset: 0;
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(4px);
+        z-index: 1;
+      "></div>
+
+  <!-- Timeline content above overlay -->
   <div class="timeline" style="position: relative; z-index: 2;">
+
     <div class="timeline-item left">
       <div class="content">
         <h3>2013–2015</h3>
@@ -115,8 +124,10 @@
         <p>Sustainability & Global Reach</p>
       </div>
     </div>
+
   </div>
 </div>
+
 
   <!-- Citations Section -->
 <section class="section fade-in" aria-label="Citations and References">
