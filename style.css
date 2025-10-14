@@ -361,7 +361,9 @@ body.fade-out { opacity: 0; transition: opacity .28s ease }
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: url('images/milestone.jpg') center/cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+              url('images/milestone.JPG') center center / cover no-repeat;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
